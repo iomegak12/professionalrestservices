@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.0\Microsoft.Libraries.Api.Controllers.Impl.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Libraries.Api.Controllers.Interfaces\Microsoft.Libraries.Api.Controllers.Interfaces.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Business.Interfaces\Microsoft.Libraries.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Business.Validations.Interfaces\Microsoft.Libraries.Business.Validations.Interfaces.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Models\Microsoft.Libraries.Models.csproj" />
+  </ItemGroup>
+
+</Project>

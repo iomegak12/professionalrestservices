@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Libraries.Business.Interfaces\Microsoft.Libraries.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Business.Validations.Interfaces\Microsoft.Libraries.Business.Validations.Interfaces.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Models\Microsoft.Libraries.Models.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Repositories.Interfaces\Microsoft.Libraries.Repositories.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\ValuesController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Libraries.Api.Controllers.Impl\Microsoft.Libraries.Api.Controllers.Impl.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Api.Controllers.Interfaces\Microsoft.Libraries.Api.Controllers.Interfaces.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Business.Impl\Microsoft.Libraries.Business.Impl.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Business.Interfaces\Microsoft.Libraries.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Business.Validations.Impl\Microsoft.Libraries.Business.Validations.Impl.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Business.Validations.Interfaces\Microsoft.Libraries.Business.Validations.Interfaces.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Models\Microsoft.Libraries.Models.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.ORM.Impl\Microsoft.Libraries.ORM.Impl.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.ORM.Interfaces\Microsoft.Libraries.ORM.Interfaces.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Repositories.Impl\Microsoft.Libraries.Repositories.Impl.csproj" />
+    <ProjectReference Include="..\Microsoft.Libraries.Repositories.Interfaces\Microsoft.Libraries.Repositories.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Microsoft.Libraries.Api.Controllers.Impl.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

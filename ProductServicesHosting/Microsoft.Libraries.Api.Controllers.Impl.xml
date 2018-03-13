@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Libraries.Api.Controllers.Impl</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Libraries.Api.Controllers.Impl.ProductsApiController">
+            <summary>
+            Products REST Service that provides Inventory Operations
+            </summary>
+        </member>
+        <member name="M:Microsoft.Libraries.Api.Controllers.Impl.ProductsApiController.#ctor(Microsoft.Libraries.Business.Interfaces.IProductsBusinessComponent)">
+            <summary>
+            Constructor which accepts business component dependencies
+            </summary>
+            <param name="productsBusinessComponent">Valid Business Component</param>
+        </member>
+        <member name="M:Microsoft.Libraries.Api.Controllers.Impl.ProductsApiController.GetProduct(System.Int32)">
+            <summary>
+            Gets a Product Detail by Product Id
+            </summary>
+            <param name="productId">Product Id</param>
+            <returns>Detail of the Product</returns>
+        </member>
+        <member name="M:Microsoft.Libraries.Api.Controllers.Impl.ProductsApiController.GetProducts(System.Int32)">
+            <summary>
+            Gets all products
+            </summary>
+            <returns>An array of products</returns>
+        </member>
+        <member name="M:Microsoft.Libraries.Api.Controllers.Impl.ProductsApiController.SaveProduct(Microsoft.Libraries.Models.Product)">
+            <summary>
+            Saves a New Product
+            </summary>
+            <param name="product">Product Detail</param>
+            <returns>Status of the Operation</returns>
+        </member>
+        <member name="M:Microsoft.Libraries.Api.Controllers.Impl.ProductsApiController.SearchProducts(System.String)">
+            <summary>
+            Searches products by Product Name partially
+            </summary>
+            <param name="productName">Partial Product Name</param>
+            <returns>An array of products that match partial search string.</returns>
+        </member>
+    </members>
+</doc>

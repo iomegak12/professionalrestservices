@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:latest
+FROM microsoft/dotnet:2.0.7-sdk-2.1.105-nanoserver-1709
 
 COPY . /app
 

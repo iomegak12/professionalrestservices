@@ -13,7 +13,9 @@
       "launchBrowser": true,
       "launchUrl": "api/products",
       "environmentVariables": {
-        "ProductsDBConnectionString": "ZGF0YSBzb3VyY2U9aW9tZWdhdm0uZWFzdHVzLmNsb3VkYXBwLmF6dXJlLmNvbTt1c2VyIGlkPXNhO3Bhc3N3b3JkPVByZXN0aWdlQDEyMztpbml0aWFsIGNhdGFsb2c9RGVtb0RCOw==",
+        "ProductsDBConnectionString": "ZGF0YSBzb3VyY2U9aW9tZWdhc3Fsc2VydmVydjIuZGF0YWJhc2Uud2luZG93cy5uZXQ7dXNlciBpZD1pb21lZ2FhZG1pbjtwYXNzd29yZD1QcmVzdGlnZTEyMztpbml0aWFsIGNhdGFsb2c9aW9tZWdhc3FsZGF0YWJhc2V2Mjs=",
+        "Authority": "https://login.microsoftonline.com/381a10df-8e85-43db-86e1-8893b075b027",
+        "Audience": "546c9126-7041-4fe0-9068-91acd18344c9",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },

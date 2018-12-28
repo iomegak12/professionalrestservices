@@ -1,13 +1,14 @@
-FROM microsoft/dotnet:2.1-sdk
+FROM microsoft/dotnet:2.2-sdk AS build
 
 COPY . /app
 
 WORKDIR /app
 
 RUN dotnet restore
+RUN dotnet publish -c Release -o out
 
-RUN dotnet build
+FROM microsoft/dotnet:2.2-aspnetcore-runtime AS runtime
+WORKDIR /app
+COPY --from=build /app/out ./
 
-EXPOSE 8080
-
-ENTRYPOINT dotnet run --project ProductServicesHosting --no-launch-profile
+ENTRYPOINT ["dotnet", "aspnetapp.dll"]

@@ -14,7 +14,7 @@ namespace Microsoft.Libraries.Api.Controllers.Impl
     /// </summary>
     [Produces("application/json")]
     [Route("api/products")]
-    [Authorize]
+    /// [Authorize]
     public class ProductsApiController : Controller, IProductsApiController
     {
         private const int DEFAULT_NO_OF_RECORDS = 25;

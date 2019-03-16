@@ -53,7 +53,9 @@ namespace ProductServicesHosting
             services.AddScoped<IBusinessValidator<string>, ProductSearchStringValidator>();
             services.AddScoped<IBusinessValidator<Product>, ProductValidator>();
             services.AddScoped<IProductsBusinessComponent, ProductsBusinessComponent>();
-
+            
+            /*
+            
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(
                     jwtBearerOptions =>
@@ -61,7 +63,8 @@ namespace ProductServicesHosting
                         jwtBearerOptions.Audience = Environment.GetEnvironmentVariable("Audience");
                         jwtBearerOptions.Authority = Environment.GetEnvironmentVariable("Authority");
                     });
-
+            */
+            
             services.AddSwaggerGen(
                swaggerGenOptions =>
                {
@@ -103,7 +106,7 @@ namespace ProductServicesHosting
                     swaggerUIOptions.SwaggerEndpoint("/swagger/v1/swagger.json", "Products API v1");
                 });
 
-            app.UseAuthentication();
+            // app.UseAuthentication();
             app.UseMvc();
         }
     }

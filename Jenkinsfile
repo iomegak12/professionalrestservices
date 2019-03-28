@@ -8,11 +8,7 @@ pipeline {
     
     stage('Test') {
       steps {
-        sh '''echo ${BUILD_URL}
-        
-        echo Thinking to change
-
-echo ${newBuildUrl}'''
+        sh '''echo ${newBuildUrl}'''
       }
     }
   }
